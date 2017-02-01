@@ -1,0 +1,104 @@
+*
+    box-sizing border-box
+
+ul, li
+    list-style-type none
+    margin 0
+    padding 0
+
+a
+    text-decoration none
+    cursor pointer
+
+body
+    margin 0
+    padding 0
+    background url(../img/bg.jpg) no-repeat center center
+    height 100%
+    width 100%
+    font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+
+    .wrap
+        position relative
+        margin 0 auto
+        padding 20px 20px 0 20px
+        width 960px
+        display flex
+        justify-content space-between
+        .main
+            background white
+            flex 1
+            padding 20px
+            .wrapImg
+                position relative
+                display flex
+                .bgImg
+                    position relative
+                    overflow hidden
+                    height 600px
+                    img
+                        position relative
+                        margin auto
+                        top -20px
+                        max-width 100%
+                .logo
+                    position absolute
+                    right 20px
+                    top 20px
+                    img
+                        width 120px
+                .txtImg
+                    position absolute
+                    right 20px
+                    bottom 15px
+                    img
+                        width 200px
+                        opacity .5
+
+            .nav
+                margin-top 20px
+                ul
+                    display flex
+                    flex-wrap wrap
+                    justify-content space-between
+                    li
+                        border-radius 7px
+                        width 33%
+                        margin 2px 0
+                        background rgba(131, 208, 245, 1)
+                        padding 20px 20px 8px 20px
+                        transition all 300ms ease-in-out
+                        p
+                            font-size 20px
+                            line-height 15px
+                            margin 0
+                            padding 0
+                            color white
+                        span
+                            font-family "Arial Rounded MT Bold", Arial, Helvetica, sans-serif
+                            letter-spacing -0.7px
+                            font-size 10px
+                            color black
+                        &:hover
+                            background rgba(230, 0, 125, 1)
+                    .active
+                        background rgba(230, 0, 125, 1)
+
+
+        .left, .right
+            padding 20px
+            display flex
+            flex-direction column
+            img
+                width 75px
+                padding 10px 0
+        .right
+            align-self flex-end
+
+.footer
+    height 40px
+    background rgba(0,0,0,.9)
+    width 690px
+    margin 0 auto
+    margin-bottom 20px
+
