@@ -5,7 +5,6 @@ html(lang='en')
         meta(charset='utf-8')
         title Sonic-club
         link(rel="stylesheet" type="text/css" href="css/main.css")
-        script(src="js/tab.js")
 
     body
         div.wrap
@@ -14,7 +13,7 @@ html(lang='en')
                 img(src="img/nemo-bw.png" alt="Nemo")
 
             div.main
-                div(id="default" class="tabcontent home")
+                div.home
                     div.bg-home
                         img(src="img/img-10.png" alt="Home")
 
@@ -23,7 +22,7 @@ html(lang='en')
                     div.txt-home
                         img(src="img/img-txt.png" alt="")
 
-                div(id="noticies" class="tabcontent  noticies")
+                div.noticies
                     div.bg-noticies
                         img(src="img/img-12.png" alt="Noticies")
 
@@ -36,7 +35,7 @@ html(lang='en')
 
                         p Ut id ultricies elit. Cras pellentesque, ipsum et pharetra consequat, eros lorem lobortis est, et maximus ante nunc ut dolor. Maecenas ac sodales nunc. Ut eget urna diam. Quisque at arcu ante. Phasellus rhoncus tempus sem eget vulputate. Nam ultrices faucibus magna posuere pharetra. Duis sodales pulvinar elit. Etiam accumsan condimentum leo, posuere luctus nisl dapibus ut.
 
-                div(id="concerts" class="tabcontent concerts")
+                div.concerts
                     div.bg-concerts
                         img(src="img/img-13.png" alt="Concerts")
 
@@ -53,7 +52,7 @@ html(lang='en')
                         span 11 / 03 / 2010
                         p Ut id ultricies elit. Cras pellentesque, ipsum et pharetra consequat, eros lorem lobortis est, et maximus ante nunc ut dolor. Maecenas ac sodales nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum turpis a eros pulvinar, id pellentesque augue condimentum.
 
-                div(id="clubs" class="tabcontent clubs")
+                div.clubs
                     div.bg-clubs
                         img(src="img/img-14.png" alt="Clubs")
 
@@ -75,42 +74,42 @@ html(lang='en')
 
                 div.nav
                     ul
-                        li(href="javascript:void(0)" class="tablinks active" onclick="chHeader(event, 'default')" title="sonic")
-                            p sonic
-                            span Lorem ipsum dolor sit amet, consectetur.
-
-                        li(href="javascript:void(0)" class="tablinks" onclick="chHeader(event, 'noticies')" title="notícies")
-                            p notícies
-                            span Lorem ipsum dolor sit amet, consectetur.
-
-                        li(href="javascript:void(0)" class="tablinks" onclick="chHeader(event, 'concerts')" title="concerts")
-                            p concerts
-                            span Lorem ipsum dolor sit amet, consectetur.
-
-                        li(href="javascript:void(0)" class="tablinks" onclick="chHeader(event, 'clubs')" title="clubs")
-                            p clubs
-                            span Lorem ipsum dolor sit amet, consectetur.
-
-                        li(href="javascript:void(0)" class="tablinks" onclick="chHeader(event, 'galeria')" title="galería")
-                            p galería
-                            span Lorem ipsum dolor sit amet, consectetur.
-
-                        li(href="javascript:void(0)" class="tablinks" onclick="chHeader(event, 'links')" title="links")
-                            p links
-                            span Lorem ipsum dolor sit amet, consectetur.
-
-                        li(href="javascript:void(0)" class="tablinks" onclick="chHeader(event, 'myspace')" title="myspace")
-                            p myspace
-                            span Lorem ipsum dolor sit amet, consectetur.
-
-                        li(href="javascript:void(0)" class="tablinks" onclick="chHeader(event, 'twitter')" title="twitter")
-                            p twitter
-                            span Lorem ipsum dolor sit amet, consectetur.
-
-                        li(href="javascript:void(0)" class="tablinks" onclick="chHeader(event, 'facebook')" title="facebook")
-                            p facebook
-                            span Lorem ipsum dolor sit amet, consectetur.
-
+                        li.active
+                            a(href="#" title="notícies")
+                                p notícies
+                                span Lorem ipsum dolor sit amet, consectetur.
+                        li
+                            a(href="#" title="galería")
+                                p galería
+                                span Lorem ipsum dolor sit amet, consectetur.
+                        li
+                            a(href="#" title="links")
+                                p links
+                                span Lorem ipsum dolor sit amet, consectetur.
+                        li
+                            a(href="#" title="concerts")
+                                p concerts
+                                span Lorem ipsum dolor sit amet, consectetur.
+                        li
+                            a(href="#" title="myspace")
+                                p myspace
+                                span Lorem ipsum dolor sit amet, consectetur.
+                        li
+                            a(href="#" title="clubs")
+                                p clubs
+                                span Lorem ipsum dolor sit amet, consectetur.
+                        li
+                            a(href="#" title="twitter")
+                                p twitter
+                                span Lorem ipsum dolor sit amet, consectetur.
+                        li
+                            a(href="#" title="facebook")
+                                p facebook
+                                span Lorem ipsum dolor sit amet, consectetur.
+                        li
+                            a(href="#" title="spotify")
+                                p spotify
+                                span Lorem ipsum dolor sit amet, consectetur.
 
                 div.footer
 

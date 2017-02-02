@@ -1,0 +1,97 @@
+ul, li
+    list-style-type none
+    margin 0
+    padding 0
+
+a
+    text-decoration none
+    cursor pointer
+
+p
+    margin 0
+    font-size 14px
+
+.tabcontent
+    display none
+
+body
+    margin 0
+    padding 0
+    background url(../img/bg.jpg) no-repeat center center fixed
+    height 100%
+    width 100%
+    font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+    background-size cover
+
+    .wrap
+        position relative
+        margin 0 auto
+        padding 20px 20px 0 20px
+        width 960px
+        display flex
+        justify-content space-between
+        .main
+            background white
+            flex 1
+            padding 20px
+            .noticies, .home, .concerts, .clubs
+                position relative
+                overflow hidden
+                .bg-noticies, .bg-home, .bg-concerts, .bg-clubs
+                    position relative
+                    overflow hidden
+                    img
+                        position relative
+                        margin auto
+                        top -20px
+                        max-width 100%
+            .nav
+                ul
+                    display flex
+                    flex-wrap wrap
+                    justify-content space-between
+                    li
+                        box-sizing border-box
+                        border-radius 7px
+                        width 33%
+                        margin 2px 0
+                        background rgba(131, 208, 245, 1)
+                        padding 20px 20px 8px 20px
+                        transition all 300ms ease-in-out
+                        p
+                            font-size 20px
+                            line-height 15px
+                            margin 0
+                            padding 0
+                            color white
+                        span
+                            font-family "Arial Rounded MT Bold", Arial, Helvetica, sans-serif
+                            letter-spacing -0.7px
+                            font-size 10px
+                            color black
+                        &:hover
+                            background rgba(230, 0, 125, 1)
+                            cursor pointer
+                    .active
+                            background rgba(230, 0, 125, 1)
+
+        .left, .right
+            padding 20px
+            display flex
+            flex-direction column
+            img
+                width 75px
+                padding 10px 0
+        .right
+            align-self flex-end
+
+.footer
+    height 40px
+    background rgba(0,0,0,.9)
+    width 690px
+    margin-bottom 20px
+    margin-left -20px
+    margin-top 20px
+    position absolute
+    padding 0 20px
+
