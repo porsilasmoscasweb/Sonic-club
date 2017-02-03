@@ -1,0 +1,44 @@
+.content-galeria
+    right 0
+    height 80px
+    padding 20px 40px
+    text-align right
+    width 190px
+    margin-top 40px
+    h1
+        line-height 50px
+        margin 0
+.carousel
+    position absolute
+    bottom 20px
+    width 100%
+    ul
+        display flex
+        justify-content space-around
+        flex-wrap wrap
+        position absolute
+        bottom -230px
+        width 100%
+        background rgba(0,0,0, .4)
+        padding-top 10px
+        transition bottom 300ms ease-in-out
+        &:hover
+            bottom 0
+            background rgba(0,0,0, .4)
+        li.active
+            opacity .9
+        li
+            width 20%
+            height 100px
+            margin 10px 5px
+            position relative
+            overflow hidden
+            opacity .4
+            &:hover
+                opacity .9
+                cursor pointer
+            img
+                top -20px
+                position relative
+                margin auto
+                width 100%

@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="wrap">
-      <div class="left"><img src="img/sonic-bw.png" alt="Sonic"><img src="img/nemo-bw.png" alt="Nemo"></div>
+      <div class="left-logos"><img src="img/sonic-bw.png" alt="Sonic"><img src="img/nemo-bw.png" alt="Nemo"></div>
       <div class="main">
         <div class="tabcontent home" id="default">
           <div class="bg-home"><img src="img/img-10.png" alt="Home"></div>
@@ -47,6 +47,37 @@
           </div>
           <div class="logo-clubs"><img src="img/sonic-color.png" alt="Sonic"><img src="img/nemo-color.png" alt="Nemo"></div>
         </div>
+        <div class="tabcontent galeria" id="galeria">
+          <div class="bg-galeria"><img src="img/car-1.jpg" alt="Galería"></div>
+          <div class="content-galeria">
+            <h1>galería</h1>
+            <h4>Lorem ipsum dolor</h4>
+          </div>
+          <div class="carousel">
+            <ul>
+              <li class="active"><img src="img/car-1.jpg" alt="Galería"></li>
+              <li><img src="img/car-2.jpg" alt="Galería"></li>
+              <li><img src="img/car-3.jpg" alt="Galería"></li>
+              <li><img src="img/car-4.jpg" alt="Galería"></li>
+              <li><img src="img/car-5.jpg" alt="Galería"></li>
+              <li><img src="img/car-1.jpg" alt="Galería"></li>
+              <li><img src="img/car-2.jpg" alt="Galería"></li>
+              <li><img src="img/car-3.jpg" alt="Galería"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabcontent contact" id="contact">
+          <div class="bg-contact"><img src="img/img-13.png" alt="Contact"></div>
+          <div class="content-contact">
+            <h1>contact us</h1>
+            <form class="topBefore" id="form">
+              <input id="name" type="text" placeholder="name">
+              <input id="email" type="text" placeholder="e-mail">
+              <textarea id="message" type="text" placeholder="message"></textarea>
+              <input id="submit" type="submit" value="GO!"><span>Send success !</span>
+            </form>
+          </div>
+        </div>
         <div class="nav">
           <ul>
             <li class="tablinks active" href="javascript:void(0)" onclick="chHeader(event, 'default')" title="sonic">
@@ -64,23 +95,23 @@
             <li class="tablinks" href="javascript:void(0)" onclick="chHeader(event, 'galeria')" title="galería">
               <p>galería</p><span>Lorem ipsum dolor sit amet, consectetur.</span>
             </li>
-            <li class="tablinks" href="javascript:void(0)" onclick="chHeader(event, 'links')" title="links">
-              <p>links</p><span>Lorem ipsum dolor sit amet, consectetur.</span>
+            <li class="tablinks" href="javascript:void(0)" onclick="chHeader(event, 'contact')" title="contact">
+              <p>contact us</p><span>Lorem ipsum dolor sit amet, consectetur.</span>
             </li>
-            <li class="tablinks" href="javascript:void(0)" onclick="chHeader(event, 'myspace')" title="myspace">
+            <li>
               <p>myspace</p><span>Lorem ipsum dolor sit amet, consectetur.</span>
             </li>
-            <li class="tablinks" href="javascript:void(0)" onclick="chHeader(event, 'twitter')" title="twitter">
+            <li>
               <p>twitter</p><span>Lorem ipsum dolor sit amet, consectetur.</span>
             </li>
-            <li class="tablinks" href="javascript:void(0)" onclick="chHeader(event, 'facebook')" title="facebook">
+            <li>
               <p>facebook</p><span>Lorem ipsum dolor sit amet, consectetur.</span>
             </li>
           </ul>
         </div>
         <div class="footer"></div>
       </div>
-      <div class="right"><img src="img/spritz.png" alt="Spritz"><img src="img/vinil.png" alt="Vinil"><img src="img/laPedra.png" alt="La Pedra"><img src="img/platea.png" alt="Platea"></div>
+      <div class="right-logos"><img src="img/spritz.png" alt="Spritz"><img src="img/vinil.png" alt="Vinil"><img src="img/laPedra.png" alt="La Pedra"><img src="img/platea.png" alt="Platea"></div>
     </div>
   </body>
 </html>

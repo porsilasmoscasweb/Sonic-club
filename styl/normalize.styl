@@ -6,13 +6,43 @@ ul, li
 a
     text-decoration none
     cursor pointer
-
-p
+h1
+    font-size 60px
+    letter-spacing -0.4px
+    text-transform lowercase
+    margin 30px 0 0 0
+    padding 0
+    line-height 70px
+h3
+    font-size 40px
+    margin 20px 0 0 0
+h4
+    font-size 16px
+    margin 0 0 40px 0
+span
+    font-size 18px
     margin 0
+p
+    margin 10px 0 0 0
+    text-transform initial
     font-size 14px
 
 .tabcontent
     display none
+
+.content-galeria, .content-clubs,
+.content-concerts, .content-noticies, .content-contact
+    position absolute
+    color white
+    text-transform lowercase
+    background rgba(0,0,0,.8)
+    height 100%
+    width 50%
+    padding 20px
+    overflow-x hidden
+    overflow-y scroll
+    &::-webkit-scrollbar
+        display none
 
 body
     margin 0
@@ -22,7 +52,7 @@ body
     width 100%
     font-family "Helvetica Neue", Helvetica, Arial, sans-serif
     background-size cover
-
+    letter-spacing -0.4px
     .wrap
         position relative
         margin 0 auto
@@ -34,57 +64,18 @@ body
             background white
             flex 1
             padding 20px
-            .noticies, .home, .concerts, .clubs
+            .noticies, .home, .concerts, .clubs, .galeria, .contact
                 position relative
                 overflow hidden
-                .bg-noticies, .bg-home, .bg-concerts, .bg-clubs
+                .bg-noticies, .bg-home, .bg-concerts, .bg-clubs, .bg-galeria, .bg-contact
                     position relative
                     overflow hidden
+                    height 670px
                     img
                         position relative
                         margin auto
                         top -20px
                         max-width 100%
-            .nav
-                ul
-                    display flex
-                    flex-wrap wrap
-                    justify-content space-between
-                    li
-                        box-sizing border-box
-                        border-radius 7px
-                        width 33%
-                        margin 2px 0
-                        background rgba(131, 208, 245, 1)
-                        padding 20px 20px 8px 20px
-                        transition all 300ms ease-in-out
-                        p
-                            font-size 20px
-                            line-height 15px
-                            margin 0
-                            padding 0
-                            color white
-                        span
-                            font-family "Arial Rounded MT Bold", Arial, Helvetica, sans-serif
-                            letter-spacing -0.7px
-                            font-size 10px
-                            color black
-                        &:hover
-                            background rgba(230, 0, 125, 1)
-                            cursor pointer
-                    .active
-                            background rgba(230, 0, 125, 1)
-
-        .left, .right
-            padding 20px
-            display flex
-            flex-direction column
-            img
-                width 75px
-                padding 10px 0
-        .right
-            align-self flex-end
-
 .footer
     height 40px
     background rgba(0,0,0,.9)
